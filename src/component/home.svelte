@@ -3,11 +3,15 @@
 </script>
 
 <div class="home">
-  <img
-    class="home-picture"
-    src="/images/cath.png"
-    alt="Catherine Dorion"
-  />
+  <picture class="home-picture">
+    <source srcset="/images/cath.avif" type="image/avif">
+    <source srcset="/images/cath.webp" type="image/webp">
+    <img
+      class="home-picture"
+      src="/images/cath.jpg"
+      alt="Catherine Dorion"
+    />
+  </picture>
   <div class="content">
     {@html html}
   </div>
